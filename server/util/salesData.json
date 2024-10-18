@@ -1,0 +1,12 @@
+[
+	{ "month": "January", "year": 2024, "sales": 3462 },
+	{ "month": "February", "year": 2024, "sales": 3234 },
+	{ "month": "March", "year": 2024, "sales": 4978 },
+	{ "month": "April", "year": 2024, "sales": 4896 },
+	{ "month": "May", "year": 2024, "sales": 3589 },
+	{ "month": "June", "year": 2024, "sales": 3721 },
+	{ "month": "July", "year": 2024, "sales": 3498 },
+	{ "month": "August", "year": 2024, "sales": 3847 },
+	{ "month": "September", "year": 2024, "sales": 4925 },
+	{ "month": "October", "year": 2024, "sales": 3673 }
+]
