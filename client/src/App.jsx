@@ -21,6 +21,7 @@ import PaymentSuccess from './pages/shop/paymentSuccess';
 import PaypalReturn from './pages/shop/paypalReturn';
 import Search from './pages/shop/search';
 import PaymentFail from './pages/shop/paymentFail';
+import { Skeleton } from './components/ui/skeleton';
 
 function App() {
 	const { isAuthenticated, user, isLoading } = useSelector((state) => state.auth);
@@ -30,7 +31,14 @@ function App() {
 		dispatch(checkAuth(token));
 	}, [dispatch, token]);
 
-	if (isLoading) return <div>Loading...</div>;
+	if (isLoading)
+		return (
+			<div className='w-screen h-screen overflow-clip grid place-content-center gap-2'>
+				<Skeleton className={'h-[200px] w-[300px]'} />
+				<Skeleton className={'h-[20px] w-[300px]'} />
+				<Skeleton className={'h-[20px] w-[200px]'} />
+			</div>
+		);
 
 	return (
 		<>
