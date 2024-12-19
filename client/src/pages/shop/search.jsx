@@ -78,7 +78,7 @@ function Search() {
 	return (
 		<div className='container mx-auto md:px-6 px-4 py-8'>
 			<div className='flex justify-center mb-8'>
-				<div className='w-[50%] flex items-center'>
+				<div className='w-full lg:w-1/2 flex items-center'>
 					<Input
 						value={keyword}
 						name='keyword'

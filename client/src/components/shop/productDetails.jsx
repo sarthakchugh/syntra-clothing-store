@@ -68,7 +68,7 @@ function ProductDetails({
 		>
 			<DialogTitle className='sr-only'>Product Details</DialogTitle>
 			<DialogDescription className='sr-only'>Product Details</DialogDescription>
-			<DialogContent className='grid grid-cols-2 gap-8 sm:p-6 max-w-[90wv] sm:max-w-[80vw] lg:max-w-[70vw]'>
+			<DialogContent className='grid md:grid-cols-2 gap-8 p-4 lg:p-6 max-w-[95vw] lg:max-w-[70vw] rounded-lg'>
 				<div className='relative overflow-hidden rounded-lg'>
 					<img
 						src={product?.image}

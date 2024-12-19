@@ -103,7 +103,7 @@ function Address({ fromCheckout = false, selectedAddress, setSelectedAddress }) 
 			) : null}
 
 			<div
-				className={`${fromCheckout ? '' : ' md:grid-cols-3'} mb-5 p-3 grid grid-cols-1 sm:grid-cols-2 gap-2`}
+				className={`${fromCheckout ? 'lg:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3'} mb-5 p-3 grid grid-cols-1  gap-2`}
 			>
 				{addresses && addresses.length > 0 ? (
 					addresses.map((address, index) => (
@@ -123,7 +123,7 @@ function Address({ fromCheckout = false, selectedAddress, setSelectedAddress }) 
 				)}
 			</div>
 
-			<CardHeader className='flex flex-row items-center justify-between mx-auto w-1/2'>
+			<CardHeader className='flex flex-row items-center justify-between mx-auto lg:w-1/2'>
 				<CardTitle>{addressToEdit !== null ? 'Edit Address' : 'Add Address'}</CardTitle>
 				{addressToEdit !== null ? (
 					<Button
@@ -137,7 +137,7 @@ function Address({ fromCheckout = false, selectedAddress, setSelectedAddress }) 
 				) : null}
 			</CardHeader>
 			<CardDescription className='sr-only' />
-			<CardContent className='space-y-3 w-1/2 mx-auto'>
+			<CardContent className='space-y-3 mx-auto max-w-md lg:max-w-lg'>
 				<Form
 					formControls={addressFormControls}
 					formData={formData}

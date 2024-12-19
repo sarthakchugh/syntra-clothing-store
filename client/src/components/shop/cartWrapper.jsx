@@ -11,12 +11,12 @@ function CartWrapper({ setOpenCartSheet }) {
 		return total + item.quantity * (item.product.salePrice > 0 ? item.product.salePrice : item.product.price);
 	}, 0);
 	return (
-		<SheetContent className='sm:max-w-[450px]'>
+		<SheetContent className='w-full sm:max-w-[450px]'>
 			<SheetHeader>
 				<SheetTitle className='font-bold text-xl'>Your Cart</SheetTitle>
 			</SheetHeader>
 			<SheetDescription className='sr-only'>Cart Sidebar</SheetDescription>
-			<div className='mt-8 space-y-4 overflow-y-scroll h-[70vh] scrollbar-w-10 scrollbar-track-white scrollbar-thumb-black'>
+			<div className='mt-8 space-y-4 overflow-y-scroll h-[75vh] scrollbar-w-10 scrollbar-track-white scrollbar-thumb-black'>
 				{cartItems && cartItems.length > 0
 					? cartItems.map((cartItem) => <CartContent key={cartItem.product_id} item={cartItem} />)
 					: null}

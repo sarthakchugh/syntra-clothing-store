@@ -35,7 +35,7 @@ function Login() {
 		});
 	}
 	return (
-		<div className='mx-auto w-full max-w-md space-y-6'>
+		<div className='mx-auto w-full max-w-xs md:max-w-md space-y-6'>
 			<div className='text-center'>
 				<h1 className='text-3xl font-bold tracking-tight text-foreground'>Login to your account</h1>
 				<p>
